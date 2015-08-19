@@ -3,6 +3,9 @@ __author__ = 'SekthDroid'
 
 class FizzBuzz(object):
     def execute(self, param):
+        if param % 3 is 0 and param % 5 is 0:
+            return "fizzbuzz"
+
         if param % 3 is 0:
             return "fizz"
 
