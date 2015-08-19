@@ -20,3 +20,7 @@
 fizzbuzz/__pycache__/fizzbuzz.cpython-34.pyc
 
 fizzbuzz/__pycache__/__init__.cpython-34.pyc
+
+*.pyc
+
+*.pyc
