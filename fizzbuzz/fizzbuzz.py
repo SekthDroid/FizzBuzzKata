@@ -9,8 +9,10 @@ class FizzBuzz(object):
 
         if param % 5 is 0:
             result += "buzz"
+        if param % 7 is 0:
+            result += "pop"
 
         if len(result) is 0:
             return param
-        
+
         return result

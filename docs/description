@@ -7,3 +7,8 @@ Description:
 
 
 (From https://github.com/garora/TDD-Katas)
+
+- Adding FizzBuzz Variations
+Turns out that Fizz Buzz has a whole bunch of variants that people play in different countries and for different ages of children. One of the most interesting we have seen is Fizz Buzz Pop, where the word 'pop' is substituted for numbers that are a multiple of seven. We want you to extend the rules of our current Fizz Buzz game to allow players to play Fizz Buzz Pop instead.
+
+(From http://agilekatas.co.uk/katas/FizzBuzz-Kata)
