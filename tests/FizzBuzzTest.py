@@ -35,3 +35,7 @@ class FizzBuzzTest(TestCase):
 
     def test_should_return_buzz_pop_when_number_is_divisible_by_five_and_seven(self):
         self.assertEqual("buzzpop", self.fizzbuzz.execute(35))
+
+    def test_should_return_fizzbuzzpop_when_number_is_divisible_by_three_and_five_and_seven(self):
+        self.assertEqual("fizzbuzzpop", self.fizzbuzz.execute(105))
+        self.assertEqual("fizzbuzzpop", self.fizzbuzz.execute(210))
