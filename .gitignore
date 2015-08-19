@@ -16,3 +16,7 @@
 .idea/scopes/scope_settings.xml
 
 .idea/modules.xml
+
+fizzbuzz/__pycache__/fizzbuzz.cpython-34.pyc
+
+fizzbuzz/__pycache__/__init__.cpython-34.pyc

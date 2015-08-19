@@ -2,4 +2,5 @@ __author__ = 'SekthDroid'
 
 
 class FizzBuzz(object):
-    pass
+    def execute(self, param):
+        return param
