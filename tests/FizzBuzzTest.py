@@ -5,7 +5,6 @@ __author__ = 'SekthDroid'
 
 
 class FizzBuzzTest(TestCase):
-
     def setUp(self):
         super().setUp()
         self.fizzbuzz = FizzBuzz()
@@ -39,3 +38,8 @@ class FizzBuzzTest(TestCase):
     def test_should_return_fizzbuzzpop_when_number_is_divisible_by_three_and_five_and_seven(self):
         self.assertEqual("fizzbuzzpop", self.fizzbuzz.execute(105))
         self.assertEqual("fizzbuzzpop", self.fizzbuzz.execute(210))
+
+    def test_should_return_fuzz_when_number_is_divisible_by_two(self):
+        custom_variation = {"fuzz": 2}
+        self.assertEqual("fuzz", self.fizzbuzz.execute(2, custom_variation))
+        self.assertEqual("fuzz", self.fizzbuzz.execute(10, custom_variation))
