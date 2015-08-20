@@ -1,21 +1,18 @@
+from collections import OrderedDict
+
 __author__ = 'SekthDroid'
 
 
 class FizzBuzz(object):
+    variations = OrderedDict()
+    variations["fizz"] = 3
+    variations["buzz"] = 5
+    variations["pop"] = 7
+
     def execute(self, param, variations=None):
         result = ""
-        if variations is not None:
-            for key, value in variations.items():
-                if param % value is 0:
-                    result += key
-        else:
-            if param % 3 is 0:
-                result += "fizz"
-
-            if param % 5 is 0:
-                result += "buzz"
-
-            if param % 7 is 0:
-                result += "pop"
+        variations = variations if variations else self.variations
+        for key, value in variations.items():
+            result += key if param % value is 0 else ""
 
         return result if len(result) > 0 else param
